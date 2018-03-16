@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA067FE21FED5CCD00F962B1 /* QQMessageInvoke.h in Headers */ = {isa = PBXBuildFile; fileRef = EA067FE11FED5CCD00F962B1 /* QQMessageInvoke.h */; };
 		EA067FE41FED5CCD00F962B1 /* QQMessageInvoke.m in Sources */ = {isa = PBXBuildFile; fileRef = EA067FE31FED5CCD00F962B1 /* QQMessageInvoke.m */; };
+		EA067FEE1FED5FAB00F962B1 /* libsubstitute.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA067FED1FED5FAB00F962B1 /* libsubstitute.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA067FDE1FED5CCD00F962B1 /* libQQMessageInvoke.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libQQMessageInvoke.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA067FE11FED5CCD00F962B1 /* QQMessageInvoke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQMessageInvoke.h; sourceTree = "<group>"; };
 		EA067FE31FED5CCD00F962B1 /* QQMessageInvoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQMessageInvoke.m; sourceTree = "<group>"; };
+		EA067FEC1FED5DB100F962B1 /* substrate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = substrate.h; sourceTree = "<group>"; };
+		EA067FED1FED5FAB00F962B1 /* libsubstitute.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsubstitute.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA067FEE1FED5FAB00F962B1 /* libsubstitute.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,10 +49,19 @@
 		EA067FE01FED5CCD00F962B1 /* QQMessageInvoke */ = {
 			isa = PBXGroup;
 			children = (
-				EA067FE11FED5CCD00F962B1 /* QQMessageInvoke.h */,
+				EA067FEB1FED5D8200F962B1 /* substrate */,
 				EA067FE31FED5CCD00F962B1 /* QQMessageInvoke.m */,
 			);
 			path = QQMessageInvoke;
+			sourceTree = "<group>";
+		};
+		EA067FEB1FED5D8200F962B1 /* substrate */ = {
+			isa = PBXGroup;
+			children = (
+				EA067FED1FED5FAB00F962B1 /* libsubstitute.dylib */,
+				EA067FEC1FED5DB100F962B1 /* substrate.h */,
+			);
+			path = substrate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,7 +71,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA067FE21FED5CCD00F962B1 /* QQMessageInvoke.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +249,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QQMessageInvoke/substrate",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -251,6 +265,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QQMessageInvoke/substrate",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
