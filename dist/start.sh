@@ -14,7 +14,7 @@ echo 请在此处输入y
 install_name_tool -change /usr/local/lib/libsubstitute.0.dylib @executable_path/libsubstitute.dylib $qqpath/libQQMessageInvoke.dylib
 install_name_tool -change $qqpath/libQQMessageInvoke.dylib @executable_path/libQQMessageInvoke.dylib $qqpath/QQ
 otool -L QQ | grep voke
-echo 正在启动qq
+echo '原始文件已经备份到了$qqpath/QQ $qqpath/QQ_backup'
 mv $qqpath/QQ $qqpath/QQ_backup
 mv $qqpath/QQ_patched $qqpath/QQ
 echo "防撤回成功！"
