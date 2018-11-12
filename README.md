@@ -18,7 +18,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/lonecloud/QQMessageInvoke/
 
 
 
-![](https://preview.ibb.co/d5qDsq/yb8x1-jwk82.gif)
+![](https://image.ibb.co/kHw8QA/yb8x1-jwk82.gif)
 
 推荐使用新版本啦：
 
