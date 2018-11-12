@@ -17,5 +17,5 @@ otool -L QQ | grep voke
 echo 正在启动qq
 mv $qqpath/QQ $qqpath/QQ_backup
 mv $qqpath/QQ_patched $qqpath/QQ
-$qqpath/QQ
+echo "防撤回成功！"
 
