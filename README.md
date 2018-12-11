@@ -22,7 +22,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/lonecloud/QQMessageInvoke/
 
 推荐使用新版本啦：
 
-
+## 卸载
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/lonecloud/QQMessageInvoke/master/dist/uninstall.sh)"
+```
 
 以下为老版本安装：
 
