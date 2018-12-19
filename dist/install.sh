@@ -9,7 +9,7 @@ main(){
     	exit 1
   	}
   	cd $GITHOME/dist
-  	expect auto.exp
+  	sh start.sh
 }
 
 

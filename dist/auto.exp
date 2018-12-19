@@ -1,5 +1,0 @@
-#!/bin/expect
-spawn sh start.sh
-expect {  
-   "*found. Remove it?" { send "yes\r"; exp_continue}  
-}
