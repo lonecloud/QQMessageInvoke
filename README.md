@@ -7,9 +7,9 @@ QQ 防测回插件
 2. 复制如下代码执行
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/lonecloud/QQMessageInvoke/master/dist/install.sh)"
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/lonecloud/QQMessageInvoke/master/dist/install.sh)"
 ```
-
+3. 输入密码，等待安装完成
 
 
 即可进行安装：

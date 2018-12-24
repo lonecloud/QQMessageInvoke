@@ -9,7 +9,7 @@ main(){
     	exit 1
   	}
   	cd $GITHOME/dist
-  	sh start.sh
+    sh start.sh
 }
 
 
