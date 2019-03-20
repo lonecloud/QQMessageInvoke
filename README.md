@@ -1,5 +1,7 @@
-# QQMessageInvoke
-QQ 防测回插件
+# QQ 防测回插件
+
+[![](https://img.shields.io/badge/platform-MacOS-brightgreen.svg)]()  [![release](https://img.shields.io/badge/release-v0.2-orange.svg)](<https://github.com/lonecloud/QQMessageInvoke/releases>)  [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+
 
 新版本发布：
 
